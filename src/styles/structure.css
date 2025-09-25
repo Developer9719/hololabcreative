@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header > h1, footer { /* Direct Child selector */
+header > h1, footer, .slogan { /* Direct Child selector */
     text-align: center;
 }
 
@@ -13,4 +13,8 @@ header, footer {
 
 .mainContent {
     height: 90%;
+}
+
+body {
+    /* Background image is a cutout of Holo the Wolf silhouette centered in the screen */
 }
