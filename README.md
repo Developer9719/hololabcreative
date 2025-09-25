@@ -9,7 +9,3 @@ Update this repo so it uses the class from the to-do project to display the HTML
 - update title and description values in package.json file to match current project
 - update siteTitle variable in index.js for it to be reflected across the site
 - pageTitle variable in index.js is an export so it can be updated dynamically per page
-
-
-# Developer Notes
-Need to update all display() calls to basicElementStructure object constructor calls.

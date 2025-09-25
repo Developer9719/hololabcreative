@@ -1,25 +1,25 @@
 {
-  "name": "jsapptemplate",
+  "name": "hololabcreative",
   "version": "1.0.0",
-  "description": "",
+  "description": "All-in-One Creative Studio",
   "main": "./src/script/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "openServer": "npx webpack serve --config webpack.dev.js" 
+    "openServer": "npx webpack serve --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Developer9719/jsAppTemplate.git"
+    "url": "git+https://github.com/Developer9719/hololabcreative.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Developer9719/jsAppTemplate/issues"
+    "url": "https://github.com/Developer9719/hololabcreative/issues"
   },
-  "homepage": "https://github.com/Developer9719/jsAppTemplate#readme",
+  "homepage": "https://github.com/Developer9719/hololabcreative#readme",
   "devDependencies": {
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
