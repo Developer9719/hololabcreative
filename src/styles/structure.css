@@ -1,6 +1,7 @@
 * { /* Universal Selector: Reset */
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 header > h1, footer, .slogan { /* Direct Child selector */
@@ -17,4 +18,8 @@ header, footer {
 
 body {
     /* Background image is a cutout of Holo the Wolf silhouette centered in the screen */
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/421/228/58/holo-spice-and-wolf-okamimimi-anime-wallpaper-1930980db15a4d5be6a7e85fe0a1e67d.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
