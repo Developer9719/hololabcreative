@@ -97,6 +97,11 @@ export class basicElementStructures {
             ]
         }
     }
+    
+    static nav(howMany, content) {4
+        
+    }
+    
 }
 
 export function customizedHTML() {
@@ -107,6 +112,8 @@ export function customizedHTML() {
     new basicElementStructures(header, 'body');
     const slogan = basicElementStructures.div('An All-in-One Creative Studio', ['slogan']);
     new basicElementStructures(slogan, 'header');
+    const nav = basicElementStructures.nav(2, false, ['Home', 'Projects']);
+    new basicElementStructures(nav, 'header');
 
     const div = basicElementStructures.div('Test Content', ['mainContent']);
     new basicElementStructures(div, 'body');
