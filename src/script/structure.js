@@ -98,8 +98,24 @@ export class basicElementStructures {
         }
     }
     
-    static nav(howMany, content) {4
-        
+    static nav(content) {
+        // Use .map() to transform the array of objects into an array of link blueprints.
+        const linkChildren = content.map(item => {
+            return {
+                tag: 'a',
+                // Access properties using dot notation: item.text
+                content: item.text, 
+                attributes: {
+                    // Access properties using dot notation: item.url
+                    href: item.url // Fixes the 'urr' typo if it was used in the object!
+                }
+            };
+        });
+
+        return {
+            tag: 'nav',
+            children: linkChildren
+        };
     }
     
 }
@@ -112,7 +128,23 @@ export function customizedHTML() {
     new basicElementStructures(header, 'body');
     const slogan = basicElementStructures.div('An All-in-One Creative Studio', ['slogan']);
     new basicElementStructures(slogan, 'header');
-    const nav = basicElementStructures.nav(2, false, ['Home', 'Projects']);
+    
+    // Nav
+    const navContent = [
+        {
+            text: 'Home',
+            url: './index.js'
+        },
+        {
+            text: 'About',
+            url: './about.js'
+        }, 
+        {
+            text: 'Projects', 
+            urr: './projects.js'
+        }
+    ]
+    const nav = basicElementStructures.nav(navContent);
     new basicElementStructures(nav, 'header');
 
     const div = basicElementStructures.div('Test Content', ['mainContent']);
