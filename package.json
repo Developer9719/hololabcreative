@@ -1,7 +1,7 @@
 {
   "name": "hololabcreative",
   "version": "1.0.0",
-  "description": "All-in-One Creative Studio",
+  "description": "A web development studio",
   "main": "./src/script/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

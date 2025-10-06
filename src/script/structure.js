@@ -126,7 +126,7 @@ export function customizedHTML() {
     /* Basic Header */ 
     const header = basicElementStructures.siteHeader(`${siteTitle}`);
     new basicElementStructures(header, 'body');
-    const slogan = basicElementStructures.div('An All-in-One Creative Studio', ['slogan']);
+    const slogan = basicElementStructures.div('A Web Development Studio', ['slogan']);
     new basicElementStructures(slogan, 'header');
     
     // Nav
